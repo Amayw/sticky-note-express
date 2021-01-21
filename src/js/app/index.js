@@ -1,5 +1,2 @@
-let a=require('../mod/a.js').a;
-module.exports={
-  a,
-  b:'sdf'
-}
+let Toast=require('../mod/toast').Toast;
+Toast('hello moon');
