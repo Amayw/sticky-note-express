@@ -18,17 +18,17 @@ module.exports = {
   //     }) //把 css 抽离出来生成一个文件
   //   }]
   // },
-  // resolve: {
-  //   alias: {
-  //     jquery: path.join(__dirname, "js/lib/jquery-2.0.3.min.js"),
-  //     mod: path.join(__dirname, "js/mod"),
-  //     less: path.join(__dirname, "less")
-  //   }
-  // },
+  resolve: {
+    alias: {
+      jquery: path.join(__dirname, "js/lib/jquery-2.0.3.min.js"),
+      mod: path.join(__dirname, "js/mod"),
+      less: path.join(__dirname, "less")
+    }
+  },
   plugins: [
-    // new webpack.ProvidePlugin({
-    //   $: "jquery"
-    // }),
+    new webpack.ProvidePlugin({
+      $: "jquery"
+    }),
     // new ExtractTextPlugin("css/index.css"),
     // new webpack.LoaderOptionsPlugin({
     //   options: {
