@@ -1,4 +1,4 @@
-// require('less/toast.less');
+require('less/toast.less');
 // let $=require('../lib/jquery-2.0.3.min.js')
 // let $=require('jquery');
 function toast(msg, time){
